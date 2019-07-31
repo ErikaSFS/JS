@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Questão 5</title>
+    </head>
+    <body>
+        <script>
+            function exibeHabilidades(usuarios){
+		for (usuario of usuarios){
+		  console.log(
+		    "O" +
+		      usuario.nome +
+			"possui as habilidades: " +
+'			   usuario.habilidades.join(", ")
+			);
+		}
+	}
+
+		var usuarios = [
+			{
+			  nome: "Erika",
+			  habilidades: ["JS", "ReactJS"]
+			},
+			{
+			  nome: "Salém",
+			  habilidades: ["VueJS", "Angular"]
+			}
+		];
+
+		exibirHabilidades(usuarios);
+        </script>    
+    </body>
+</html>
